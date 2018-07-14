@@ -1,0 +1,57 @@
+#logo{
+    height: 10%;
+}
+#cover{
+    height: 70%;
+}
+#button-set{
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+#button-set a{
+    text-decoration:none;
+    color: white;
+}
+#button-set button{
+    width : 20%;
+    height: 50px;
+    /* position: relative;
+    left: 4%; */
+    border: none;
+    margin-left: 3%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+}
+#button-set button:nth-child(1){
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    -webkit-box-shadow: 8px 6px 50px #00cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    8px 6px 50px #00cccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         4px 4px 40px #00cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: #00cccc;
+}
+#button-set button:nth-child(2){
+    -webkit-box-shadow: 8px 6px 50px #ea6343;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    8px 6px 50px #ea6343;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         4px 4px 40px #ea6343;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: #ea6343;
+}
+#button-set button:nth-child(3){
+    -webkit-box-shadow: 8px 6px 50px #f3ad57;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    8px 6px 50px #f3ad57;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         4px 4px 40px #f3ad57;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: #f3ad57;
+}
+#button-set button:nth-child(4){
+    -webkit-box-shadow: 8px 6px 50px #6bb7f1;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    8px 6px 50px #6bb7f1;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         4px 4px 40px #6bb7f1;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    background: #6bb7f1;
+}
+
+#cover img{
+    width: 60%;
+    position: relative;
+    left:20%;
+}
