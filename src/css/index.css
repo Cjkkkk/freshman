@@ -33,7 +33,19 @@ html,body{
     top: 4%;
     left: 5%;
     font-family: siyuanBold;
-    font-size: 24px;
+    font-size: 12px;
+}
+#declaration img{
+    display: inline-block;
+    width:15%;
+    height: 15%;
+}
+#declaration p{
+    display: inline-block;
+    height: 10%;
+    position: absolute;
+    left: 20%;
+    top:-30%;
 }
 #official-site{
     z-index: 300;
@@ -41,7 +53,7 @@ html,body{
     top: 4%;
     right: 5%;
     font-family: siyuanBold;
-    font-size: 24px;
+    font-size: 12px;
 }
 #official-site a{
     text-decoration: none;
@@ -56,7 +68,25 @@ html,body{
     font-size: 12px;
     color: #000000;
 }
-.blank{
+
+
+#img-set img:nth-child(1){
+    width: 5%;
+    height:5%;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 300;
+}
+#img-set img:nth-child(2){
+    width: 5%;
+    height:5%;
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    z-index: 300;
+ }
+.content{
     position: absolute;
     left: 0;
     width:100%;
@@ -125,26 +155,26 @@ html,body{
 .session p:nth-child(1){
     color: #0db2a9;
     font-family: Haettenschweiler;
-    font-size: 72px;
+    font-size: 100px;
     position: absolute;
-    left:10%;
+    left:20%;
     top:25%;
     margin: 0;
 }
 .session p:nth-child(2){
     position: absolute;
     font-family: siyuanRegular;
-    left:10%;
-    top:40%;
-    font-size: 30px;
+    left:20%;
+    top:57%;
+    font-size: 39px;
     margin: 0;
 }
 .session p:nth-child(3){
     font-family: robot;
     position: absolute;
-    font-size: 24px;
-    left:10%;
-    top:45%;
+    font-size: 28px;
+    left:20%;
+    top:65%;
     margin: 0;
 }
 
