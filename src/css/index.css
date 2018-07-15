@@ -50,7 +50,7 @@ html,body{
 #official-site{
     z-index: 300;
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: 5%;
     font-family: siyuanBold;
     font-size: 12px;
@@ -94,153 +94,321 @@ html,body{
     z-index: -100;
     background: #ffffff;
 }
-.session{
-    white-space:nowrap;
-    height: 100vh;
-    width: 25%;
-    padding: 0;
-    margin: 0;
-}
-
-/* 设置session */
-.session:nth-child(1){
-    position: absolute;
-    left:0%;
-    background: linear-gradient(to right, #ffffff 50%,  #00cccc 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition:all 0.5s ease !important;
-}
-.session:nth-child(2){
-    position: absolute;
-    left:25% ;
-    background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition:all 0.5s ease !important;
-}
-.session:nth-child(3){
-    position: absolute;
-    left:50%;
-    background: linear-gradient(to right, #ffffff 50%, #f3ad57 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition:all 0.5s ease !important;
-}
-.session:nth-child(4){
-    position: absolute;
-    left:75%;
-    background: linear-gradient(to right, #ffffff 50%, #6bb7f1 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition:all 0.5s ease !important;
-}
-
-.session:hover{
-    background-position:right bottom !important;
-    transition:all 0.5s ease !important;
-}
-
-.session:hover p{
-    color:#ffffff !important;
-    transition:all 0.5s ease !important;
-}
-/*设置p*/
-.session p{
-    color: #000000;
-    font-size: 30px;
-    white-space:nowrap;
-}
-
-.session p:nth-child(1){
-    color: #0db2a9;
-    font-family: Haettenschweiler;
-    font-size: 100px;
-    position: absolute;
-    left:20%;
-    top:25%;
-    margin: 0;
-}
-.session p:nth-child(2){
-    position: absolute;
-    font-family: siyuanRegular;
-    left:20%;
-    top:57%;
-    font-size: 39px;
-    margin: 0;
-}
-.session p:nth-child(3){
-    font-family: robot;
-    position: absolute;
-    font-size: 28px;
-    left:20%;
-    top:65%;
-    margin: 0;
-}
-
-
-/* 设置button */
-.session button{
-    width : 30%;
-    height: 50px;
-    border: none;
-    margin-left: 3%;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 20px;
-}
-.session:nth-child(1) button{
-    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
-    -webkit-box-shadow: 8px 6px 50px #00cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    8px 6px 50px #00cccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         4px 4px 40px #00cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    background: #00cccc;
-}
-.session:nth-child(2) button{
-    -webkit-box-shadow: 8px 6px 50px #ea6343;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    8px 6px 50px #ea6343;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         4px 4px 40px #ea6343;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    background: #ea6343;
-}
-.session:nth-child(3) button{
-    -webkit-box-shadow: 8px 6px 50px #f3ad57;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    8px 6px 50px #f3ad57;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         4px 4px 40px #f3ad57;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    background: #f3ad57;
-}
-.session:nth-child(4) button{
-    -webkit-box-shadow: 8px 6px 50px #6bb7f1;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    8px 6px 50px #6bb7f1;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         4px 4px 40px #6bb7f1;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    background: #6bb7f1;
-}
 
 .session a{
     text-decoration:none;
     color: white;
 }
 
+/* 手机移动端适配 */
+/* @media (max-width: 1025px),(orientation: portrait) */
+@media (max-width: 700px){ 
+    .session{
+        white-space:nowrap;
+        height: 20vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* 设置session */
+    .session:nth-child(1){
+        position: absolute;
+        top:10%;
+        background: linear-gradient(to right, #ffffff 50%,  #00cccc 50%); 
+        background-size: 200% 100%; 
+        background-position:left bottom; 
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(2){
+        position: absolute;
+        top:30% ;
+        background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(3){
+        position: absolute;
+        top:50%;
+        background: linear-gradient(to right, #ffffff 50%, #f3ad57 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(4){
+        position: absolute;
+        top:70%;
+        background: linear-gradient(to right, #ffffff 50%, #6bb7f1 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    
+        /*设置p*/
+    .session p{
+        color: #000000;
+        font-size: 30px;
+        white-space:nowrap;
+    }
 
-
-
-.button-set{
-    position: fixed;
-    left:2%;
-    top: 30%;
-    width:10vw;
+    .session p:nth-child(1){
+        color: #0db2a9;
+        font-family: Haettenschweiler;
+        font-size: 70px;
+        position: absolute;
+        left:20%;
+        top:20%;
+        margin: 0;
+    }
+    .session p:nth-child(2){
+        position: absolute;
+        font-family: siyuanRegular;
+        left:50%;
+        top:25%;
+        font-size: 30px;
+        margin: 0;
+    }
+    .session p:nth-child(3){
+        font-family: robot;
+        position: absolute;
+        font-size: 20px;
+        left:50%;
+        top:50%;
+        margin: 0;
+    }
+    .button-set{
+        position: fixed;
+        left:2%;
+        top: 30%;
+        width:30vw;
+    }
+    
+    .button-set a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .button-set button{
+        font-family: siyuan;
+        border: none;
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+        font-size: 10px;
+        color: #ffffff;
+    }
 }
 
-.button-set a{
-    text-decoration: none;
-    color: #ffffff;
+
+/* 平板端适配 */
+@media (min-width: 700px) and (max-width: 1024px){ 
+    .session{
+        white-space:nowrap;
+        height: 20vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* 设置session */
+    .session:nth-child(1){
+        position: absolute;
+        top:10%;
+        background: linear-gradient(to right, #ffffff 50%,  #00cccc 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(2){
+        position: absolute;
+        top:30% ;
+        background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(3){
+        position: absolute;
+        top:50%;
+        background: linear-gradient(to right, #ffffff 50%, #f3ad57 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(4){
+        position: absolute;
+        top:70%;
+        background: linear-gradient(to right, #ffffff 50%, #6bb7f1 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    
+        /*设置p*/
+    .session p{
+        color: #000000;
+        font-size: 30px;
+        white-space:nowrap;
+    }
+
+    .session p:nth-child(1){
+        color: #0db2a9;
+        font-family: Haettenschweiler;
+        font-size: 100px;
+        position: absolute;
+        left:20%;
+        top:20%;
+        margin: 0;
+    }
+    .session p:nth-child(2){
+        position: absolute;
+        font-family: siyuanRegular;
+        left:50%;
+        top:25%;
+        font-size: 39px;
+        margin: 0;
+    }
+    .session p:nth-child(3){
+        font-family: robot;
+        position: absolute;
+        font-size: 28px;
+        left:50%;
+        top:50%;
+        margin: 0;
+    }
+    .button-set{
+        position: fixed;
+        left:2%;
+        top: 30%;
+        width:30vw;
+    }
+    
+    .button-set a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .button-set button{
+        font-family: siyuan;
+        border: none;
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff;
+    }
+}
+/* PC端适配 */
+@media (min-width: 1025px){
+    .session{
+        white-space:nowrap;
+        height: 100vh;
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* 设置session */
+    .session:nth-child(1){
+        position: absolute;
+        left:0%;
+        top: 0;
+        background: linear-gradient(to right, #ffffff 50%,  #00cccc 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        /* background-image: url("../img/ruxue.jpeg"); */
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(2){
+        position: absolute;
+        left:25% ;
+        top: 0;
+        background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(3){
+        position: absolute;
+        left:50%;
+        top: 0;
+        background: linear-gradient(to right, #ffffff 50.1%, #f3ad57 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    .session:nth-child(4){
+        position: absolute;
+        left:75%;
+        top: 0;
+        background: linear-gradient(to right, #ffffff 50%, #6bb7f1 50%);
+        background-size: 200% 100%;
+        background-position:left bottom;
+        transition:all 0.5s ease !important;
+    }
+    
+    .session:hover{
+        background-position:right bottom !important;
+        transition:all 0.5s ease !important;
+    }
+    
+    .session:hover p{
+        color:#ffffff !important;
+        transition:all 0.5s ease !important;
+    }
+    /*设置p*/
+    .session p{
+        color: #000000;
+        font-size: 30px;
+        white-space:nowrap;
+    }
+
+    .session p:nth-child(1){
+        color: #0db2a9;
+        font-family: Haettenschweiler;
+        font-size: 100px;
+        position: absolute;
+        left:20%;
+        top:25%;
+        margin: 0;
+    }
+    .session p:nth-child(2){
+        position: absolute;
+        font-family: siyuanRegular;
+        left:20%;
+        top:57%;
+        font-size: 39px;
+        margin: 0;
+    }
+    .session p:nth-child(3){
+        font-family: robot;
+        position: absolute;
+        font-size: 28px;
+        left:20%;
+        top:65%;
+        margin: 0;
+    }
+    .button-set{
+        position: fixed;
+        left:2%;
+        top: 30%;
+        width:10vw;
+    }
+    
+    .button-set a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .button-set button{
+        font-family: siyuan;
+        border: none;
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff;
+    }
 }
 
-.button-set button{
-    font-family: siyuan;
-    border: none;
-    display: block;
-    margin-top: 5%;
-    width: 100%;
-    font-size: 26px;
-    color: #ffffff;
-}
