@@ -6,37 +6,156 @@
         <link rel="stylesheet" type="text/css" href="./src/css/index.css">
     </head>
     <body>
-        <!-- <div id = "logo"></div>
-        <div id = "cover">
-            <img src = "./src/img/study.jpeg"/>
-        </div> -->
         <div class = "session">
+            <p>01</p>
             <p>入学</p>
-            <button type="button"><a href="#">入学</a></button>
-        </div>
-        <div class = "session">
+            <p>Admission</p>
+            <!-- <button type="button"><a href="#">入学</a></button> -->
+        </div><div class = "session">
+            <p>02</p>
             <p>生活</p>
-            <button type="button"><a href="#">生活</a></button>
-        </div>
-        <div class = "session">
+            <p>Life</p>
+            <!-- <button type="button"><a href="#">生活</a></button> -->
+        </div><div class = "session">
+            <p>03</p>
             <p>军训</p>
-            <button type="button"><a href="#">军训</a></button>
-        </div>
-        <div class = "session">
+            <p>Training</p>
+            <!-- <button type="button"><a href="#">军训</a></button> -->
+        </div><div class = "session">
+            <p>04</p>
             <p>学习</p>
-            <button type="button"><a href="#">学习</a></button>
+            <p>Study</p>
         </div>
+        <p id = "declaration">求是潮 2018新生手册</p>
+        <p id = "right">浙江大学 求是潮 All right reserved.</p>
+        <p id = "official-site"><a id = "url" href = "#">求是潮官网</a></p>
 
+        <div class = "content">
+            <div class = "button-set">
+                <button class="return"> < </button>
+                <button><a href="#">校区和学园</a></button>
+                <button><a href="#">报道必备</a></button>
+                <button><a href="#">到港交通</a></button>
+                <button><a href="#">报道流程</a></button>
+                <button><a href="#">ZJUWLAN</a></button>
+                <button><a href="#">关于电脑</a></button></div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class = "button-set">
+                <button class="return"> < </button>
+                <button><a href="#">1</a></button>
+                <button><a href="#">2</a></button>
+                <button><a href="#">3</a></button>
+                <button><a href="#">4</a></button>
+                <button><a href="#">5</a></button>
+            </div>
+        </div>
+        <div class = "content">
+            <div class = "button-set">
+                <button class="return"> < </button>
+                <button><a href="#">a</a></button>
+                <button><a href="#">b</a></button>
+                <button><a href="#">c</a></button>
+                <button><a href="#">d</a></button>
+                <button><a href="#">e</a></button>
+            </div>
+        </div>
+        <div class = "content">
+            <div class = "button-set">
+                <button class="return"> < </button>
+                <button><a href="#">f</a></button>
+                <button><a href="#">g</a></button>
+                <button><a href="#">h</a></button>
+                <button><a href="#">i</a></button>
+                <button><a href="#">j</a></button>
+            </div>
+        </div>
     </body>
 </html>
 
 
 <script>
-        const sessions = document.getElementsByClassName("session");
+        const sessions = document.getElementsByClassName("session")
+        var contents = document.getElementsByClassName("content");
         for(var i = 0 ; i < sessions.length ; i++ ){
-            var link = sessions[i].getElementsByTagName("a")
-            link.addEventListener("click",function(event){
-                element.style.color = "black";
-            })
-        }
+            sessions[i].style.zIndex = 1;
+            (function(i,state){
+                var session = sessions[i]
+                var content = contents[i]
+                var p_collection = session.getElementsByTagName("p")
+                var title = document.getElementById("declaration")
+                var site = document.getElementById("official-site")
+                var url = document.getElementById("url")
+                var return_button = content.getElementsByClassName("return")[0]
+
+
+                const move_in = ()=>{
+                    session.style.width = "100vw"
+                    session.style.left = 0
+                    session.style.zIndex = 100
+                    setTimeout(()=>{
+                        p_collection[0].style.color = "#ffffff"
+                        p_collection[0].style.fontSize = "120px"
+                        p_collection[0].style.top = "20%"
+                        p_collection[0].style.left = "5%"
+                        p_collection[1].style.color = "#ffffff"
+                        p_collection[1].style.top = "30%"
+                        p_collection[1].style.left = "10%"
+                        p_collection[2].style.color = "#ffffff"
+                        p_collection[2].style.top = "45%"
+                        p_collection[2].style.left = "10%"
+
+                        content.style.position = "absolute"
+                        content.style.left = "0"
+                        content.style.height = "100vh"
+                        content.style.width = "100%"
+                        content.style.zIndex = 50
+                        content.style.backgroundColor="#ffffff"
+                        session.style.backgroundPosition = "right bottom"
+                        session.style.height = "25vh"
+                        url.style.color = "#ffffff"
+                        site.style.top = "1.5%"
+                        title.style.color = "#ffffff"
+                        title.style.top = "1.5%"
+                    },500)
+                }
+
+                const move_out = ()=>{
+                    session.style.zIndex = 1
+                    session.style.height = "100vh"
+                    p_collection[0].style.color = "#0db2a9"
+                    p_collection[0].style.fontSize = "72px"
+                    p_collection[0].style.left = "10%"
+                    p_collection[0].style.top = "25%"
+                    p_collection[1].style.color = "#000000"
+                    p_collection[1].style.left = "10%"
+                    p_collection[1].style.top = "40%"
+                    p_collection[2].style.color = "#000000"
+                    p_collection[2].style.left = "10%"
+                    p_collection[2].style.top = "45%"
+                    session.style.backgroundPosition = "left bottom"
+                    session.style.width = "25%"
+                    session.style.left = i * 25 + "%"
+                    content.style.zIndex = -100
+                    url.style.color = "#000000"
+                    site.style.top = "4%"
+                    title.style.color = "#000000"
+                    title.style.top = "4%"
+                }
+                return_button.addEventListener("click",function(){
+                    move_out()
+                    state = true
+                })
+                session.addEventListener("click",function(event){
+                    if(state){
+                        move_in()
+                        state = false
+                    }else{
+                        move_out()
+                        state = true;
+                    }
+                })
+        })(i,true)
+    }
     </script>
