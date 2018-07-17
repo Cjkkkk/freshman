@@ -10,7 +10,7 @@ const sessions = document.getElementsByClassName("session")
                 var site = document.getElementById("official-site")
                 var url = document.getElementById("url")
                 var return_button = content.getElementsByClassName("return")[0]
-
+                var img = session.getElementsByTagName("img")[0]
 
                 const move_in_PC = ()=>{
                     session.style.width = "100vw"
@@ -26,7 +26,6 @@ const sessions = document.getElementsByClassName("session")
                         p_collection[2].style.color = "#ffffff"
                         p_collection[2].style.top = "45%"
                         p_collection[2].style.left = "10%"
-
                         content.style.position = "absolute"
                         content.style.left = "0"
                         content.style.height = "100vh"
@@ -39,7 +38,12 @@ const sessions = document.getElementsByClassName("session")
                         site.style.top = "1.5%"
                         title.style.color = "#ffffff"
                         title.style.top = "1.5%"
+                        img.style.opacity = 0;
                     },500)
+                    setTimeout(()=>{
+                        img.style.width = 0;
+                    },1000)
+
                 }
 
                 const move_out_PC = ()=>{
@@ -62,6 +66,8 @@ const sessions = document.getElementsByClassName("session")
                     site.style.top = "4%"
                     title.style.color = "#000000"
                     title.style.top = "4%"
+                    img.style.opacity = 1;
+                    img.style.width = "100%";
                 }
 
 
