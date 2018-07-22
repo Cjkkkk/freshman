@@ -26,6 +26,7 @@ html,body{
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 #declaration{
     z-index: 300;
@@ -86,15 +87,34 @@ html,body{
     bottom: 5%;
     z-index: 300;
  }
-.content{
+.container{
+    font-family: siyuanRegular;
     position: absolute;
     left: 0;
     width:100%;
-    height: 100vh;
+    height: 0;
+    display: none;
     z-index: -100;
     background: #ffffff;
 }
 
+.content{
+    font-size: 16px;
+}
+.content .Main-title{
+    font-size: 28px;
+    width: 10vw;
+    border-bottom:medium solid #ea6343;
+}
+.content .sub-title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.content .block{
+    margin-top: 30px;
+}
 .session a{
     text-decoration:none;
     color: white;
@@ -421,10 +441,17 @@ html,body{
         font-family: siyuan;
         border: none;
         display: block;
-        margin-top: 5%;
+        margin-top: 10%;
         width: 100%;
         font-size: 20px;
         color: #ffffff;
+        background-color: #878787;
     }
+    .content{
+        position: relative;
+        top:30vh;
+        left:15vw;
+        width: 75vw;
+    } 
 }
 
