@@ -21,6 +21,7 @@
     src:url(../font/NotoSansHans-Regular.otf);
 }
 
+
 html,body{
     height: 100%;
     width: 100%;
@@ -100,25 +101,88 @@ html,body{
 
 .content{
     font-size: 16px;
+    margin-bottom: 15vh;
+    position: relative;
+    top:30vh;
+    left:5vw;
+    width: 80vw;
+} 
+
+.content .block{
+    margin-top: 30px;
 }
+
 .content .Main-title{
     font-size: 28px;
-    width: 10vw;
-    border-bottom:medium solid #ea6343;
+    width: 20vw;
+    margin: 0;
 }
+
 .content .sub-title{
     width: 100%;
     text-align: center;
     font-size: 18px;
 }
 
-.content .block{
-    margin-top: 30px;
+.content .left_sub-title{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
 }
+
+
+
+.container .content .para{
+    text-indent: 16px;
+}
+
+.container:nth-child(1) .content .border{
+
+    border-bottom:medium solid #00cccc;
+    transition: all 1s ease;
+    width: 0;
+}
+
+.container:nth-child(2) .content .border{
+    border-bottom:medium solid #ea6343;
+    transition: all 1s ease;
+    width: 0;
+}
+
+.container:nth-child(2) .content .left_sub-title{
+    color:#ea6343;
+}
+.container:nth-child(3) .content .border{
+    border-bottom:medium solid #f3ad57;
+    transition: all 1s ease;
+    width: 0;
+}
+
+.container:nth-child(3) .content .left_sub-title{
+    color: #f3ad57;
+}
+
+.container:nth-child(4) .content .border{
+    border-bottom:medium solid #6bb7f1;
+    transition: all 1s ease;
+    width: 0;
+}
+
+.container:nth-child(4) .content .left_sub-title{
+    color: #6bb7f1;
+}
+
+
 .session a{
     text-decoration:none;
     color: white;
 }
+
+
+
+
+
+
 
 /* 手机移动端适配 */
 /* @media (max-width: 1025px),(orientation: portrait) */
@@ -143,7 +207,7 @@ html,body{
     .session:nth-child(2){
         position: absolute;
         top:30% ;
-        background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
+        background: linear-gradient(to right, #ffffff 50%, #ea6343 50%);
         background-size: 200% 100%;
         background-position:left bottom;
         transition:all 0.5s ease !important;
@@ -243,7 +307,7 @@ html,body{
     .session:nth-child(2){
         position: absolute;
         top:30% ;
-        background: linear-gradient(to right, #ffffff 50.1%, #ea6343 50%);
+        background: linear-gradient(to right, #ffffff 50%, #ea6343 50%);
         background-size: 200% 100%;
         background-position:left bottom;
         transition:all 0.5s ease !important;
@@ -361,7 +425,7 @@ html,body{
         position: absolute;
         left:50%;
         top: 0;
-        background: linear-gradient(to right, #ffffff 50.1%, #f3ad57 50%);
+        background: linear-gradient(to right, #ffffff 50%, #f3ad57 50%);
         background-size: 200% 100%;
         background-position:left bottom;
         transition:all 0.5s ease !important;
@@ -386,18 +450,21 @@ html,body{
         transition:all 0.5s ease !important;
     }
     .session:hover img{
-        left: 0% !important;
+        left: 0%;
         transition:all 0.5s ease !important;
     }
-    /* .session:nth-child(3):hover img{
+    .session:hover:nth-child(3) img{
         left: -20%;
         transition:all 0.5s ease !important;
-    } */
+    }
+    .session:nth-child(4):hover img{
+        left: -20%;
+        transition:all 0.5s ease !important;
+    }
     /*设置p*/
     .session p{
         color: #000000;
         font-size: 30px;
-        white-space:nowrap;
     }
 
     .session p:nth-child(1){
@@ -427,9 +494,10 @@ html,body{
     }
     .button-set{
         position: fixed;
-        left:2%;
-        top: 30%;
+        right:2%;
+        top: 30vh;
         width:10vw;
+        transition: all 0.5s ease;
     }
     
     .button-set a{
@@ -447,11 +515,5 @@ html,body{
         color: #ffffff;
         background-color: #878787;
     }
-    .content{
-        position: relative;
-        top:30vh;
-        left:15vw;
-        width: 75vw;
-    } 
 }
 
