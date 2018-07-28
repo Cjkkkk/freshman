@@ -250,7 +250,7 @@ for(let i = 0 ; i < containers.length ; i++ ){
                 // console.log(i,in_viewport)
                 let border = title_set[i].getElementsByClassName("border")[0]
                 if(in_viewport){
-                    border.style.width = "10vw"
+                    border.style.width = "100%"
                 }
                 else border.style.width = 0
             }

@@ -29,6 +29,7 @@ html,body{
     padding: 0;
     overflow-x: hidden;
 }
+
 #declaration{
     z-index: 300;
     position: absolute;
@@ -88,6 +89,8 @@ html,body{
     bottom: 5%;
     z-index: 300;
  }
+
+/* 内容容器 */
 .container{
     font-family: siyuanRegular;
     position: absolute;
@@ -114,8 +117,8 @@ html,body{
 
 .content .Main-title{
     font-size: 28px;
-    width: 20vw;
     margin: 0;
+    width: 30vh;
 }
 
 .content .sub-title{
@@ -133,28 +136,67 @@ html,body{
 
 .content .center_img_set{
     margin: auto;
-    width: 50vw;
+    width: 40vw;
 
 }
 .content .center_img_set img{
     width: 100%;
 }     
 
-.shenghuo_color{
-    background: #ea6343;
-    height: 5vh;
+
+.content .two_img_set{
+    display: inline-block;
+    width: 30vw;
+    position: relative;
+    left: 5vw;
+    margin: 2vw;
 }
 
 
+.content .two_img_set img{
+    width: 100%;
+}  
+
+.ruxue_color{
+    background: #00cccc;
+    width: 100%;
+    margin-top: -2vh;
+    height: 7vh;
+}
+.shenghuo_color{
+    background: #ea6343;
+    width: 100%;
+    margin-top: -2vh;
+    height: 7vh;
+}
+
+.junxun_color{
+    background: #f3ad57;
+    width: 100%;
+    margin-top: -2vh;
+    height: 7vh;
+}
+
+
+.xuexi_color{
+    background: #6bb7f1;
+    width: 100%;
+    margin-top: -2vh;
+    height: 7vh;
+}
 .container .content .para{
-    text-indent: 16px;
+    text-indent: 32px;
 }
 
 .container:nth-child(1) .content .border{
-
     border-bottom:medium solid #00cccc;
     transition: all 1s ease;
     width: 0;
+}
+
+.container:nth-child(1) .content a{
+    color: #00cccc;
+    font-size: 14px;
 }
 
 .container:nth-child(2) .content .border{
@@ -166,10 +208,20 @@ html,body{
 .container:nth-child(2) .content .left_sub-title{
     color:#ea6343;
 }
+.container:nth-child(2) .content a{
+    color:#ea6343;
+    font-size: 14px;
+}
 .container:nth-child(3) .content .border{
     border-bottom:medium solid #f3ad57;
     transition: all 1s ease;
     width: 0;
+}
+
+
+.container:nth-child(3) .content a{
+    color: #f3ad57;
+    font-size: 14px;
 }
 
 .container:nth-child(3) .content .left_sub-title{
@@ -180,6 +232,15 @@ html,body{
     border-bottom:medium solid #6bb7f1;
     transition: all 1s ease;
     width: 0;
+}
+
+.container:nth-child(4) .content a{
+    color: #6bb7f1;
+    font-size: 14px;
+}
+
+.container:nth-child(4) .content .sub-title{
+    color: #6bb7f1;
 }
 
 .container:nth-child(4) .content .left_sub-title{
@@ -525,7 +586,7 @@ html,body{
         display: block;
         margin-top: 10%;
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         color: #ffffff;
         background-color: #878787;
     }
