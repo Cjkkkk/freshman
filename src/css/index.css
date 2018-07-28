@@ -131,6 +131,20 @@ html,body{
 }
 
 
+.content .center_img_set{
+    margin: auto;
+    width: 50vw;
+
+}
+.content .center_img_set img{
+    width: 100%;
+}     
+
+.shenghuo_color{
+    background: #ea6343;
+    height: 5vh;
+}
+
 
 .container .content .para{
     text-indent: 16px;
