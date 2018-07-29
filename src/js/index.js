@@ -24,7 +24,7 @@ for(let i = 0 ; i < sessions.length ; i++ ){
                 //改变3个p的位置
                 p_collection[0].style.top = "5vh"
                 p_collection[1].style.top = "6vh"
-                p_collection[2].style.top = "11vh"
+                p_collection[2].style.top = "13vh"
                 p_collection[0].style.left = "5vw"
                 p_collection[1].style.left = "12vw"
                 p_collection[2].style.left = "12vw"
@@ -42,7 +42,6 @@ for(let i = 0 ; i < sessions.length ; i++ ){
                 title.style.color = "#ffffff"
                 title.style.top = "1.5%"
                 img.style.opacity = 0;
-
             },500)
             setTimeout(()=>{
                 img.style.width = 0;
@@ -91,10 +90,6 @@ for(let i = 0 ; i < sessions.length ; i++ ){
                 p_collection[0].style.left = "10%"
                 p_collection[1].style.left = "30%"
                 p_collection[2].style.left = "30%"
-                container.style.position = "absolute"
-                container.style.left = "0"
-                container.style.height = "100vh"
-                container.style.width = "100%"
                 container.style.zIndex = 50
                 container.style.backgroundColor="#ffffff"
                 container.style.display = "block"
@@ -103,14 +98,15 @@ for(let i = 0 ; i < sessions.length ; i++ ){
                 title.style.color = "#ffffff"
                 title.style.top = "1.5%"
                 session.style.top = 0;
-
                 url.style.color = "#ffffff"
                 site.style.top = "1.5%"
                 title.style.color = "#ffffff"
                 title.style.top = "1.5%"
-                img.style.width = "100%"
                 img.style.opacity = 0;
             },500)
+            setTimeout(()=>{
+                img.style.width = 0;
+            },1000)
         }
 
         const move_out_phone = ()=>{
@@ -128,18 +124,22 @@ for(let i = 0 ; i < sessions.length ; i++ ){
             session.style.backgroundPosition = "left bottom"
             session.style.top = i * 20 + 10 + "%"
             container.style.zIndex = -100
+            container.style.display = "none"
+            container.style.height = "100vh"
             url.style.color = "#000000"
             site.style.top = "4%"
             title.style.color = "#000000"
             title.style.top = "4%"
             img.style.opacity = 1
-            img.style.width = "50%"
+            img.style.width = "0"
             img.style.left = "100%";
         }
 
 
         const move_in_ipad = ()=>{
             console.log("ipad")
+            img.style.left = "50%";
+            img.style.width = "50%"
             session.style.backgroundPosition = "right bottom"
             session.style.zIndex = 100//浮动到上方
             p_collection[0].style.color = "#ffffff"
@@ -149,18 +149,23 @@ for(let i = 0 ; i < sessions.length ; i++ ){
                 p_collection[0].style.left = "10%"
                 p_collection[1].style.left = "30%"
                 p_collection[2].style.left = "30%"
-                container.style.position = "absolute"
-                container.style.left = "0"
-                container.style.height = "100vh"
-                container.style.width = "100%"
                 container.style.zIndex = 50
                 container.style.backgroundColor="#ffffff"
+                container.style.display = "block"
                 url.style.color = "#ffffff"
                 site.style.top = "1.5%"
                 title.style.color = "#ffffff"
                 title.style.top = "1.5%"
                 session.style.top = 0;
+                url.style.color = "#ffffff"
+                site.style.top = "1.5%"
+                title.style.color = "#ffffff"
+                title.style.top = "1.5%"
+                img.style.opacity = 0;
             },500)
+            setTimeout(()=>{
+                img.style.width = 0;
+            },1000)
         }
 
         const move_out_ipad = ()=>{
@@ -178,10 +183,15 @@ for(let i = 0 ; i < sessions.length ; i++ ){
             session.style.backgroundPosition = "left bottom"
             session.style.top = i * 20 + 10 + "%"
             container.style.zIndex = -100
+            container.style.display = "none"
+            container.style.height = "100vh"
             url.style.color = "#000000"
             site.style.top = "4%"
             title.style.color = "#000000"
             title.style.top = "4%"
+            img.style.opacity = 1
+            img.style.width = "0"
+            img.style.left = "100%";
         }
 
         return_button.addEventListener("click",function(){
