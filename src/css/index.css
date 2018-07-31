@@ -28,6 +28,7 @@ html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 p,li{
@@ -51,10 +52,9 @@ p,li{
 }
 #declaration p{
     display: inline-block;
-    height: 10%;
     position: absolute;
-    left: 20%;
-    top:-30%;
+    margin: 5px;
+    vertical-align: middle;
 }
 /* 官方网址 */
 #official-site{
@@ -73,7 +73,7 @@ p,li{
 
 /* 左下角声明 */
 #right{
-    z-index: 300;
+    z-index: 1;
     position: fixed;
     bottom: 5%;
     left: 5%;
@@ -284,13 +284,17 @@ p,li{
 }
 
 
-.block-divide{
+.block-divide,.left,.right{
     display: inline-block;
     width: 24%;
     vertical-align: top;
 }
 
-
+.left,.right{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
 
 
 /* 手机移动端适配 */
@@ -421,6 +425,16 @@ p,li{
     .block-divide{
         width: 49%;
         font-size: 10px;
+    }
+    .left{
+        display: inline-block;
+        width: 52%;
+        vertical-align: top;
+    }
+    .right{
+        display: inline-block;
+        width: 47%;
+        vertical-align: top;
     }
     
 
@@ -571,6 +585,16 @@ p,li{
         width: 49%;
         margin-bottom: 30px;
     }
+    .left{
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .right{
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
 
 
     .ruxue_color{
@@ -657,7 +681,7 @@ p,li{
     }
     .session:hover img{
         left: 0%;
-        width: 100%;
+        width: 100% !important;
         transition:all 0.5s ease !important;
     }
     /* .session:hover:nth-child(3) img{

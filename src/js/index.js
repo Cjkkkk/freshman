@@ -84,8 +84,7 @@ var move_out_PC = function(i){
     container.style.display = "none"
     url.style.color = "#000000"
     title.style.color = "#000000"
-    img.style.opacity = 1;
-    img.style.width = 0
+    img.style.opacity = 1
 }
 
 
