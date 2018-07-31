@@ -39,7 +39,7 @@ p,li{
 #declaration{
     z-index: 300;
     position: absolute;
-    top: 4%;
+    top: 2%;
     left: 5%;
     font-family: siyuanBold;
     font-size: 12px;
@@ -64,6 +64,7 @@ p,li{
     right: 5%;
     font-family: siyuanBold;
     font-size: 12px;
+    margin: 0;
 }
 #official-site a{
     text-decoration: none;
@@ -106,7 +107,7 @@ p,li{
     left: 0;
     width:100vw;
     display: none;
-    z-index: -100;
+    z-index: 50;
     background: #ffffff;
     display: none;
 }
@@ -442,7 +443,7 @@ p,li{
 
 
 /* 平板端适配 */
-@media (min-width: 700px) and (max-width: 1040px) and (orientation: portrait){ 
+@media (min-width: 700px) and (max-width: 1024px) and (orientation: portrait){ 
     .session{
         height: 20vh;
         width: 100vw;
@@ -589,7 +590,7 @@ p,li{
     }
 }
 /* PC端适配 */
-@media (min-width: 1025px),(orientation: landscape){
+@media (orientation: landscape) and (min-width: 700px),(min-width: 1025px){
     .session{
         white-space:nowrap;
         height: 100vh;
@@ -659,14 +660,14 @@ p,li{
         width: 100%;
         transition:all 0.5s ease !important;
     }
-    .session:hover:nth-child(3) img{
+    /* .session:hover:nth-child(3) img{
         left: -40%;
         transition:all 0.5s ease !important;
     }
     .session:nth-child(4):hover img{
         left: -20%;
         transition:all 0.5s ease !important;
-    }
+    } */
     /*设置p*/
     .session p{
         color: #000000;
