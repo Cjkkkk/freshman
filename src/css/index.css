@@ -35,7 +35,6 @@ p,li{
     text-align: justify;
 }
 
-
 /* 左上角的logo */
 #declaration{
     z-index: 300;
@@ -44,32 +43,35 @@ p,li{
     left: 5%;
     font-family: siyuanBold;
     font-size: 12px;
-}
-#declaration img{
-    display: inline-block;
-    width:15%;
-    height: 15%;
-}
-#declaration p{
-    display: inline-block;
-    position: absolute;
-    margin: 5px;
-    vertical-align: middle;
+    width: 95%;
 }
 /* 官方网址 */
 #official-site{
-    z-index: 300;
-    position: absolute;
-    top: 3%;
-    right: 5%;
+    display: inline-block;
     font-family: siyuanBold;
     font-size: 12px;
     margin: 0;
+    vertical-align: middle;
+    width: 20%!important;
 }
 #official-site a{
     text-decoration: none;
     color:#000000;
 }
+
+#declaration img{
+    display: inline-block;
+    width:4%;
+    height: 4%;
+    vertical-align: middle;
+}
+#declaration p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 75%;
+}
+
 
 /* 左下角声明 */
 #right{
@@ -452,6 +454,7 @@ p,li{
     
     .xuexi_color{
         height: 3vh;
+
     }
 }
 
@@ -517,12 +520,14 @@ p,li{
         font-family: Haettenschweiler;
         font-size: 100px;
         position: absolute;
+        display: inline-block;
         left:20%;
         top:20%;
         margin: 0;
     }
     .session p:nth-child(2){
         position: absolute;
+        display: inline-block;
         font-family: siyuanRegular;
         left:50%;
         top:25%;
@@ -531,6 +536,7 @@ p,li{
     }
     .session p:nth-child(3){
         font-family: robot;
+        display: inline-block;
         position: absolute;
         font-size: 30px;
         left:50%;
@@ -612,6 +618,7 @@ p,li{
     .xuexi_color{
         height: 4vh;
     }
+
 }
 /* PC端适配 */
 @media (orientation: landscape) and (min-width: 700px),(min-width: 1025px){

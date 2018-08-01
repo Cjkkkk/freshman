@@ -41,9 +41,9 @@ var move_in_PC = function(i){
         p_collection[1].style.color = "#ffffff"
         p_collection[2].style.color = "#ffffff"
         //改变3个p的位置
-        p_collection[0].style.top = "5vh"
-        p_collection[1].style.top = "6vh"
-        p_collection[2].style.top = "13vh"
+        p_collection[0].style.top = "6vh"
+        p_collection[1].style.top = "8vh"
+        p_collection[2].style.top = "16vh"
         p_collection[0].style.left = "5vw"
         p_collection[1].style.left = "15vw"
         p_collection[2].style.left = "15vw"
